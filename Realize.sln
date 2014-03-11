@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RealizeServer", "RealizeServer\RealizeServer.vcxproj", "{EC6FB6BE-022E-40FC-9B6C-612451A04B85}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RealizeClient", "RealizeClient\RealizeClient.vcxproj", "{1B30E666-34A3-44D5-8BEB-34F04F755204}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC6FB6BE-022E-40FC-9B6C-612451A04B85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EC6FB6BE-022E-40FC-9B6C-612451A04B85}.Debug|Win32.Build.0 = Debug|Win32
+		{EC6FB6BE-022E-40FC-9B6C-612451A04B85}.Release|Win32.ActiveCfg = Release|Win32
+		{EC6FB6BE-022E-40FC-9B6C-612451A04B85}.Release|Win32.Build.0 = Release|Win32
+		{1B30E666-34A3-44D5-8BEB-34F04F755204}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1B30E666-34A3-44D5-8BEB-34F04F755204}.Debug|Win32.Build.0 = Debug|Win32
+		{1B30E666-34A3-44D5-8BEB-34F04F755204}.Release|Win32.ActiveCfg = Release|Win32
+		{1B30E666-34A3-44D5-8BEB-34F04F755204}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
