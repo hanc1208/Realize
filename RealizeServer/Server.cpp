@@ -56,7 +56,7 @@ unsigned int __stdcall Server::Thread_IOCP(void* parameter)
 				continue;
 			}
 
-			server->onLog(stringf(("Server::Thread_IOCP > %s, 패킷 받기 성공 .. %s"), getIPFromSocket(completion_key->m_socket), packet.toString().c_str()).c_str());
+			server->onLog(stringf(("Server::Thread_IOCP > %s, 패킷 받기 성공 .. %s"), getIPFromSocket(completion_key->m_socket), packet.toString()).c_str());
 
 			server->onRead(completion_key, packet);
 
@@ -137,7 +137,7 @@ int Server::async_send(ClientData* client_data, Packet& packet)
 		return Error;
 	}
 
-	this->onLog(stringf(("Server::async_send > %s, 패킷 전송 성공 .. %s"), getIPFromSocket(client_data->m_socket), packet.toString().c_str()).c_str());
+	this->onLog(stringf(("Server::async_send > %s, 패킷 전송 성공 .. %s"), getIPFromSocket(client_data->m_socket), packet.toString()).c_str());
 
 	return 0;
 }

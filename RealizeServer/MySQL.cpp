@@ -22,7 +22,6 @@ bool MySQL::connect(char* host, char* user, char* password, char* db, int port)
 		return true;
 	}
 }
-
 bool MySQL::disconnect()
 {
 	mysql_close(m_mysql_connection);
