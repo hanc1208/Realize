@@ -130,8 +130,7 @@ list<user> MySQL::sql_result(const char * query)
 		sql_result=mysql_store_result(m_mysql_connection);
 		while((sql_row=mysql_fetch_row(sql_result))!=NULL)
 		{
-			//printf("%2s %2s %s\n",sql_row[0],sql_row[1],sql_row[2]);
-			user User = {sql_row[0], sql_row[1], sql_row[2], atoi(sql_row[3]), atoi(sql_row[4])};
+			user User = {sql_row[0], sql_row[1], sql_row[2], atoi(sql_row[3]), atoi(sql_row[4]), atoi(sql_row[5]), atoi(sql_row[6]) };
 			users.push_back(User);
 		}
 		mysql_free_result(sql_result);
