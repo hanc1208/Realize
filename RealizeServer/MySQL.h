@@ -1,6 +1,6 @@
 #pragma once
-#include "D:\xampp\mysql\include\mysql.h"
-#pragma comment(lib, "D:\\xampp\\mysql\\lib\\libmysql.lib")
+#include "C:\xampp\mysql\include\mysql.h"
+#pragma comment(lib, "C:\\xampp\\mysql\\lib\\libmysql.lib")
 
 #include "Macro.h"
 #include <vector>
