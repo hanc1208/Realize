@@ -10,7 +10,7 @@ struct ClientData
 	friend class Server;
 public:
 	SOCKET m_socket;
-private:
+protected:
 	IOContext m_io_context;
 };
 

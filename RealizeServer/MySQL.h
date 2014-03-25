@@ -1,9 +1,8 @@
 #pragma once
-#include "D:\xampp\mysql\include\mysql.h"
-#pragma comment(lib, "D:\\xampp\\mysql\\lib\\libmysql.lib")
+#include "D:\xamppp\mysql\include\mysql.h"
+#pragma comment(lib, "D:\\xamppp\\mysql\\lib\\libmysql.lib")
 
 #include "Macro.h"
-#include "user.h"
 #include <vector>
 #include <map>
 
@@ -26,9 +25,10 @@ public:
 	int getErrno();
 	const char* getError();
 
-	list<user> sql_result(const char *);
 	bool result(const char* query, vector<map<string, string>>& query_result);
 	bool result(const char* query, map<string, string>& query_result);
+	bool result(const char* query, vector<vector<string>>& query_result);
+	bool result(const char* query, vector<string>& query_result);
 	bool query(const char* query);
 	bool update(const char* table, map<string, string>& map_value, const char* where_value);
 	bool insert(const char* table, map<string, string>& map_value);
