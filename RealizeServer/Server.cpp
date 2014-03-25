@@ -218,7 +218,7 @@ void Server::start(const int port)
 		end();
 		return;
 	}
-
+	
 	m_accept_thread = (HANDLE) _beginthreadex(NULL, 0, Server::Thread_Accept, this, 0, NULL);
 
 	this->onLog("Server::start > 서버 시작");
