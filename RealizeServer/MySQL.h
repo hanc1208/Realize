@@ -1,12 +1,14 @@
 #pragma once
-#include "D:\xampp\mysql\include\mysql.h"
-#pragma comment(lib, "D:\\xampp\\mysql\\lib\\libmysql.lib")
+#include "C:\xampp\mysql\include\mysql.h"
+#pragma comment(lib, "C:\\xampp\\mysql\\lib\\libmysql.lib")
 
 #include "Macro.h"
+#include "user.h"
 #include <vector>
 #include <map>
 
 NS_REALIZE_BEGIN
+
 
 class MySQL
 {
@@ -24,6 +26,7 @@ public:
 	int getErrno();
 	const char* getError();
 
+	list<user> sql_result(const char *);
 	bool result(const char* query, vector<map<string, string>>& query_result);
 	bool result(const char* query, map<string, string>& query_result);
 	bool query(const char* query);
